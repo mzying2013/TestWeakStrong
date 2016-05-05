@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TestWeakStrong.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        NSLog(@"Hello, World!\n\n");
+        
+        [TestWeakStrong new];
     }
     return 0;
 }

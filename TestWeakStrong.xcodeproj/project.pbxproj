@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0CF6573D1CDAD4EC003FE58E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF6573C1CDAD4EC003FE58E /* main.m */; };
+		0CF657451CDAD510003FE58E /* TestWeakStrong.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF657441CDAD510003FE58E /* TestWeakStrong.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		0CF657391CDAD4EC003FE58E /* TestWeakStrong */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestWeakStrong; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CF6573C1CDAD4EC003FE58E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0CF657431CDAD510003FE58E /* TestWeakStrong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWeakStrong.h; sourceTree = "<group>"; };
+		0CF657441CDAD510003FE58E /* TestWeakStrong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWeakStrong.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				0CF6573C1CDAD4EC003FE58E /* main.m */,
+				0CF657431CDAD510003FE58E /* TestWeakStrong.h */,
+				0CF657441CDAD510003FE58E /* TestWeakStrong.m */,
 			);
 			path = TestWeakStrong;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CF657451CDAD510003FE58E /* TestWeakStrong.m in Sources */,
 				0CF6573D1CDAD4EC003FE58E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
