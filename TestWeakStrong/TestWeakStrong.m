@@ -8,6 +8,8 @@
 
 #import "TestWeakStrong.h"
 
+
+
 @interface TestWeakStrong()
 @property (nonatomic,strong) NSString * orginal3;
 @property (nonatomic,weak) NSString * weakOfOrginal3;
@@ -43,6 +45,10 @@
         NSLog(@"原数据2:%@ %p",orginal2,&orginal2);
         NSLog(@"弱引用指向原数据:%@ %p",weakPointO,&weakPointO);
         NSLog(@"弱引用指向指向原数据:%@ %p\n\n",weakPointPointO,&weakPointPointO);
+        
+        
+        __weak typeof(self) weakOfSelf = self;
+        NSLog(@"weak of self:%@",weakOfSelf);
         
     }
     
