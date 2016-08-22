@@ -8,7 +8,7 @@
 
 #import "TestWeakStrong.h"
 
-
+//引用博客地址：http://honglu.me/2015/01/06/weak%E4%B8%8Eblock%E5%8C%BA%E5%88%AB/
 #define TLog(name,Obj) {NSLog(@"变量内存地址：%p, 变量值：%p, 指向对象值：%@, --> %@",&Obj,Obj,Obj,name);}
 
 
@@ -49,6 +49,10 @@
         NSLog(@"========end====================");
         
         
+        
+        //这个主要是因为编译器本身对 NSString 是有优化的
+        //创建的 string 对象有可能是静态存储区永不释放的
+        //为了避免使用 NSString 引起一些问题，还是创建一个 NSObject 对象比较合适。
         /*
         self.orginal3 = @"orginal3";
         self.weakOfOrginal3 = _orginal3;
