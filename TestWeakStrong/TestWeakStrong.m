@@ -8,7 +8,9 @@
 
 #import "TestWeakStrong.h"
 
+
 #define TLog(name,Obj) {NSLog(@"变量内存地址：%p, 变量值：%p, 指向对象值：%@, --> %@",&Obj,Obj,Obj,name);}
+
 
 @interface TestWeakStrong()
 @property (nonatomic,strong) NSString * orginal3;
@@ -71,6 +73,10 @@
         NSLog(@"弱引用指向原数据:%@ %p",weakPointO,&weakPointO);
         NSLog(@"弱引用指向指向原数据:%@ %p\n\n",weakPointPointO,&weakPointPointO);
        */
+        
+        
+        __weak typeof(self) weakOfSelf = self;
+        NSLog(@"weak of self:%@",weakOfSelf);
     }
     
     return self;
